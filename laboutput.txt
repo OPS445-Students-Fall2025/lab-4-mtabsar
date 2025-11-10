@@ -1,0 +1,73 @@
+Lab 4 Review — quick answers
+
+Tuple purpose & difference from list
+Tuples are immutable ordered collections; lists are mutable. Tuples are safer (can’t change accidentally) and usable as dict keys.
+
+Define a tuple
+courses = ('OPS235', 'OPS335', 'OPS445')
+
+Check if 'OPS445' in tuple courses
+'OPS445' in courses
+
+Set purpose & difference
+Sets store unique, unordered items; duplicates are removed; no indexing.
+
+Define a set
+nums = {1, 2, 3}
+
+With set1, set2:
+
+All values of both: set1 | set2 or set1.union(set2)
+
+In set1 not in set2: set1 - set2 or set1.difference(set2)
+
+Values neither share (symmetric diff): set1 ^ set2 or set1.symmetric_difference(set2)
+
+Dictionary purpose
+Key–value mapping for fast lookup by key.
+
+Define elements in a dict
+my_dictionary = {'my_key': 'my_value', 'x': 1}
+
+Display key and value
+print('my_key') and print(my_dictionary['my_key'])
+
+range(), len(), append(), map() for a dictionary
+
+range() and append() aren’t dict-specific; typically used for loops/lists.
+
+len(my_dictionary) gives number of key–value pairs.
+
+map() applies a function over an iterable (e.g., over my_dictionary.values()), returning a map object.
+
+String methods
+
+lower() → all lowercase
+
+upper() → all uppercase
+
+swapcase() → swap upper/lower for each letter
+
+title() → Capitalize first letter of each word
+
+capitalize() → Capitalize first character only
+
+split(sep) → split into list by separator (default whitespace)
+
+Given course_name = 'Programming with Python'
+
+course_name[3:11] → 'gramming'
+
+course_name[10:] → 'ing with Python'
+
+course_name[-1] → 'n'
+
+Use help() for find() and count()
+In Python shell:
+
+text = "Seneca"
+help(text.find)
+help(text.count)
+
+
+These show usage, params, and return values (e.g., find returns lowest index of substring or -1; count returns occurrences).
